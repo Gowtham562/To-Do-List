@@ -4,14 +4,7 @@ const TodoApp = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
 
-  const addTask = () => {
-    if (newTask.trim() !== '') {
-      setTasks([...tasks, newTask]);
-      setNewTask('');
-    } else {
-      alert('Please enter a task.');
-    }
-  };
+
 
   const removeTask = (index) => {
     const updatedTasks = [...tasks];
